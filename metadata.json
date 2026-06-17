@@ -1,0 +1,8 @@
+{
+  "name": "Fancy Medlogistic",
+  "description": "Professional, reliable medical logistics and secure courier services based in Marrero, Louisiana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

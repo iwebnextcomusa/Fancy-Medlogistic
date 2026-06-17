@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.03);
+  }
+  
+  .glass-teal {
+    background: rgba(240, 253, 250, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(204, 251, 241, 1);
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.05);
+  }
+
+  /* Keep support for neon structures but adapt to light minimalistic sky-blue shadows */
+  .neon-border {
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.15);
+  }
+
+  .text-neon {
+    text-shadow: 0 0 10px rgba(14, 165, 233, 0.15);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar to match our clean minimalist aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+
